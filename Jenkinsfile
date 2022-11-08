@@ -1,10 +1,14 @@
-@./lib/cowsay.groovy
+def cowsay=load 'lib/cowsay.groovy'
 pipeline {
     agent any
 
     stages {
         stage('Build') {
             steps {
+                script{
+                    def cowsay=load lib/cowsay.groovy
+                    cowsay.template("cosas")
+                }
                 echo 'Building.'
             }
         }
