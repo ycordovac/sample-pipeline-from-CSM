@@ -1,4 +1,3 @@
-def cowsay=load 'lib/cowsay.groovy'
 pipeline {
     agent any
 
@@ -12,16 +11,7 @@ pipeline {
                 echo 'Building.'
             }
         }
-        stage('Test') {
-            steps {
-                echo 'Testing.'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying.'
-            }
-        }
+        
     }
 }
 
