@@ -1,23 +1,9 @@
-def template(text) {
-"""
-${border(text, '_')}
-< ${text} >
-${border(text, '-')}
-       \\   ^__^
-        \\  (oo)\\_______
-           (__)\\       )\\/\\
-               ||----w |
-               ||     ||
-"""
+def example1() {
+  println 'Hello from example1'
 }
- 
-def border(text, chr) {
- chr * (text.length() + 2)
+
+def example2() {
+  println 'Hello from example2'
 }
- 
-if (args.length == 1) {
- text = args[0]
- println template(text)
-} else {
- println "Usage: cowsay [message]"
-}
+
+return this
