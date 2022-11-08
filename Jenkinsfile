@@ -1,20 +1,21 @@
+@./lib/cowsay.groovy
 pipeline {
     agent any
 
     stages {
         stage('Build') {
             steps {
-                echo 'Building.....ab'
+                echo 'Building.'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing.....ab'
+                echo 'Testing.'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying........ab'
+                echo 'Deploying.'
             }
         }
     }
